@@ -1,6 +1,7 @@
 # Modern Warships チャット機能
 
-今回，チャットの機能を色々検証した。カスタムルームを作成し，カスタムチャットで行った。カスタムチャットの仕様はグローバルチャットやクランチャットでも同様だと思う(未確認)。
+今回，チャットの機能を色々検証した。カスタムルームを作成し，カスタムチャットで行った。(2024/09/16)
+カスタムチャットの仕様はグローバルチャットやクランチャットでも同様だと思う(未確認)。
 
 動機は，戦闘行くと落ちるから。あとMarkdown自分で書いてみたかった。
 
@@ -81,15 +82,15 @@ post_invite_card
   |`Strom`                 |Strom              |嵐                  |X     |X     |X     |O  |O     |X    |X    |X    |    |
   |`UnexploredRocks`       |Unexplored Rocks   |未踏の岩             |X     |X     |X     |O  |X     |X    |X    |X    |    |
   |`StormDay`              |Islands of Iceland |アイスランド諸島      |X     |X     |X     |O  |X     |X    |X    |X    |    |
-  |`IceWorld`              |Arctic             |北極圏               |X     |O     |x?    |O  |X     |X    |O    |X    |護衛戦あったけど消えた|
-  |`VikingBay`             |Viking Bay         |海賊の入り江         |o?    |O     |X     |O  |X     |O    |O    |X    |占領戦の神秘湾はサムネは海賊の入り江と同じな気がする，`_DM`付加して表示されるマップ名は海賊の入り江 -> 同じらしい，変な名前付けんな|
+  |`IceWorld`              |Arctic             |北極圏               |X     |O     |X?    |O  |X     |X    |O    |X    |護衛戦あったけど消えた|
+  |`VikingBay`             |Viking Bay         |海賊の入り江         |O?    |O     |X     |O  |X     |O    |O    |X    |占領戦の神秘湾はサムネは海賊の入り江と同じな気がする，`_DM`付加して表示されるマップ名は海賊の入り江 -> 同じらしい，変な名前付けんな|
   |`StonePeaks`            |Stone Peaks        |秘境の岩山           |X     |X     |X     |O  |X     |X    |X    |X    |    |
   |`TwoSamurai`            |Two Samurai        |二人の侍             |O     |O     |O     |O  |X     |O    |O    |O    |通常戦と占領戦でマップ構造が同一|
   |`HiddenDragon_TDM`      |Hidden Dragon      |隠れた龍             |X     |O     |X     |O  |O     |X    |O    |X    |    |
-  |`MonstrousMaelstorm_TDM`|Monstrous Maelstorm|巨大うずまき         |O     |X     |O     |O  |O     |**X**|X    |O    |    |
+  |`MonstrousMaelstorm_TDM`|Monstrous Maelstorm|巨大うずまき         |O     |X     |O     |O  |O     |*XX* |X    |O    |**なぜ`_DM`無い**|
   |`AridFrontier_TDM`      |Arid Frontier      |砂漠のフロンティア    |X     |O     |O     |O  |O     |X    |O    |X    |    |
   |`PolarFrontier_TDM`     |Polar Frontier     |極地戦線             |X     |X     |X     |X  |O     |X    |X    |X    |    |
-  |`LostCity_TDM`          |Lost City          |失われた都市         |O     |X     |X     |O  |O     |**X**|X    |**O**|    |
+  |`LostCity_TDM`          |Lost City          |失われた都市         |O     |X     |X     |O  |O     |*XX* |X    |*OO* |**なぜ`_DM`無い**，**なぜ`_EC`有る**|
   |`Strom_TDM`             |Strom              |嵐                  |X     |X     |X     |O  |O     |X    |X    |X    |石油リグみたいなのある方|
 - 完全に同じ文字列を再度入力すると5分間のクールタイム有り，黄色メッセージ出る，別チャットでも再起動してもリセット無し，末尾に空白と1個以上の任意の文字を付加すると回避できる
 
